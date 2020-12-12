@@ -128,9 +128,9 @@ void djikstras(Graph graph, int vert) {
         // printV(PQ);
     }
     // prints out the results
-    std::cout << "Shortest Distance from vertex " << vert << " to:\n";   
+    std::cout << "Shortest Distance from vertex " << (char)(vert+65) << " to:\n";   
     for (int i = 0; i < graph.size; ++i) {
-        std::cout << i << " is " << path[i] << "\n";
+        std::cout << (char)(i+65) << " is " << path[i] << "\n";
     }
     
 
@@ -143,7 +143,7 @@ int main() {
 
     // doesn't return anything useful
     // just prints out the results
-    djikstras(graph, 0);
+    djikstras(graph, 2);
 
     return 0;
 }
